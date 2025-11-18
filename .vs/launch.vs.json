@@ -1,0 +1,18 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "default",
+      "project": "windows\\CMakeLists.txt",
+      "projectTarget": "audio_analyzer.exe (Install)",
+      "name": "audio_analyzer.exe (Install)"
+    },
+    {
+      "type": "default",
+      "project": "windows\\CMakeLists.txt",
+      "projectTarget": "audio_analyzer.exe (runner\\audio_analyzer.exe)",
+      "name": "audio_analyzer.exe (runner\\audio_analyzer.exe)"
+    }
+  ]
+}

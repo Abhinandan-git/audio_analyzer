@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\dell\Desktop\Work\audio_analyzer\windows\build\CMakeFiles\8e1013c3b9d2795c5aa3cfe58d3c5a41\flutter_windows.dll.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\dell\Desktop\Work\audio_analyzer\windows\build\CMakeFiles\5b6d8a459a40ba4f892e0d43d22b623d\flutter_assemble.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\dell\Desktop\Work\audio_analyzer\windows\flutter\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\dell\Desktop\Work\audio_analyzer\windows\build\flutter\CMakeFiles\flutter_assemble" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{4D7BD016-215A-3606-A893-0D6248EF0FFF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

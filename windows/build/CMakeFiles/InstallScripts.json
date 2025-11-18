@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/dell/Desktop/Work/audio_analyzer/windows/build/cmake_install.cmake",
+		"C:/Users/dell/Desktop/Work/audio_analyzer/windows/build/flutter/cmake_install.cmake",
+		"C:/Users/dell/Desktop/Work/audio_analyzer/windows/build/runner/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

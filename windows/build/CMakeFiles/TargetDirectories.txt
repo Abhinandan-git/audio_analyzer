@@ -1,0 +1,10 @@
+C:/Users/dell/Desktop/Work/audio_analyzer/windows/build/CMakeFiles/INSTALL.dir
+C:/Users/dell/Desktop/Work/audio_analyzer/windows/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/dell/Desktop/Work/audio_analyzer/windows/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/dell/Desktop/Work/audio_analyzer/windows/build/flutter/CMakeFiles/flutter_wrapper_plugin.dir
+C:/Users/dell/Desktop/Work/audio_analyzer/windows/build/flutter/CMakeFiles/flutter_wrapper_app.dir
+C:/Users/dell/Desktop/Work/audio_analyzer/windows/build/flutter/CMakeFiles/flutter_assemble.dir
+C:/Users/dell/Desktop/Work/audio_analyzer/windows/build/flutter/CMakeFiles/INSTALL.dir
+C:/Users/dell/Desktop/Work/audio_analyzer/windows/build/runner/CMakeFiles/audio_analyzer.dir
+C:/Users/dell/Desktop/Work/audio_analyzer/windows/build/runner/CMakeFiles/INSTALL.dir
+C:/Users/dell/Desktop/Work/audio_analyzer/windows/build/runner/CMakeFiles/ALL_BUILD.dir
