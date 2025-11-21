@@ -1,0 +1,42 @@
+name: Flutter CI (Multi-Platform)
+
+on:
+  pull_request:
+    branches:
+      - main
+      - master
+      - feature*
+
+jobs:
+  build-and-test:
+    name: Flutter CI on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+
+    steps:
+      # 1. Checkout repository
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # 2. Install Flutter SDK
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.38.1"   # Your Flutter version
+          channel: "stable"
+
+      # 4. Fetch dependencies
+      - name: Install Dependencies
+        run: flutter pub get
+
+      # 5. Analyze Dart/Flutter code
+      - name: Flutter Analyze
+        run: flutter analyze
+
+      # 6. Run Unit Tests
+      - name: Run Unit Tests
+        run: flutter test --coverage
