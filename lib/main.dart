@@ -1,41 +1,42 @@
-import 'package:english_words/english_words.dart';
+import 'package:audio_analyzer/ui/widgets/music_box.dart';
+import 'package:audio_analyzer/ui/widgets/search_bar.dart';
+import 'package:audio_analyzer/ui/widgets/visualizer.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const App());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+// Main app, no state management at top most level
+class App extends StatelessWidget {
+  const App({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (context) => MyAppState(),
-      child: MaterialApp(
-        title: 'Namer App',
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
+    return MaterialApp(
+      home: Scaffold(
+        // Area for notch
+        body: SafeArea(
+          child: Column(
+            children: <Widget>[
+              // Search bar
+              Expanded(
+                flex: 10,
+                child: Search()
+              ),
+              // Visualizer
+              Expanded(
+                flex: 75,
+                child: Visualizer()
+              ),
+              // Music box
+              Expanded(
+                flex: 15,
+                child: MusicBox()
+              ),
+            ],
+          ),
         ),
-        home: MyHomePage(),
-      ),
-    );
-  }
-}
-
-class MyAppState extends ChangeNotifier {
-  var current = WordPair.random();
-}
-
-class MyHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    var appState = context.watch<MyAppState>();
-
-    return Scaffold(
-      body: Column(
-        children: [Text('A random idea:'), Text(appState.current.asLowerCase)],
       ),
     );
   }
